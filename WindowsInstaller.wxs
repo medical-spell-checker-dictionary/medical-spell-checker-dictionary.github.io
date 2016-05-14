@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
+<Product Name='Medical Spelling Dictionary 1.0'
+         Manufacturer='Medical Spelling Dictionary Project'
+         Id='3F30D00E-19F1-11E6-92D5-9E08C39F6DE8' 
+         UpgradeCode='D6018FF0-19F1-11E6-82DF-9E08C39F6DE8'
+         Language='1033' Codepage='932' Version='1.0.0'>
+  <Package Id='*' Keywords='Installer' Description="Medical Spelling
+                                                    Dictionary 1.0 Installer"
+           Comments='' Manufacturer='Medical Spelling Dictionary Project'
+           InstallerVersion='100' Languages='1033' Compressed='yes'
+           SummaryCodepage='932' />
+  <Media Id='1' Cabinet='med-dic.cab' EmbedCab='yes' DiskPrompt='medDicPrompt' />
+  <Property Id='medDicPrompt' Value="" />
+  <Directory Id='TARGETDIR' Name='SourceDir'>
+    <Directory Id="AppDataFolder" Name="AppDataFolder">
+      <Directory Id="MicrosoftAppData" Name="Microsoft">
+        <Directory Id="SpellingAppData" Name="Spelling">
+          <Directory Id="LangAppData" Name="en-GB">
+            <Component Id='medDicComponent'
+                       Guid='4F01D5EE-19F3-11E6-B80B-9E08C39F6DE8'
+                       Vital='yes'>
+              <File Id='medDicFile' Name='US-English-Medical-Dictionary.dic'
+                    DiskId='1' Source='US-English-Medical-Dictionary.dic'
+                    KeyPath='yes'>
+              </File>
+            </Component>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+  </Directory>
+  <Feature Id='Complete' Level='1'>
+    <ComponentRef Id='medDicComponent' />
+  </Feature>
+</Product>
+</Wix>
