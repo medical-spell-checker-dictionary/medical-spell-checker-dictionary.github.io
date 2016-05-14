@@ -527,6 +527,7 @@ aside#sidebar p.repo-owner a {
 }
 
 a.button {
+  display: block;
   width: 134px;
   height: 58px;
   padding-top: 22px;
@@ -535,18 +536,17 @@ a.button {
   font-size: 23px;
   line-height: 1.2;
   color: #fff;
+  background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
 a.button small {
   display: block;
   font-size: 11px;
 }
 aside a.button {
-  display: block;
   width: 138px;
   padding-left: 64px;
   margin-bottom: 20px;
   font-size: 21px;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
 
 code, pre {
