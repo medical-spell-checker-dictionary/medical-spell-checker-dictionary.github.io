@@ -1,14 +1,26 @@
 # Free English Medical Spell Checking Dictionary
 
+http://medical-spell-checker-dictionary.github.io/
+
 A free English Medical Dictionary for spell checking across many devices and applications.
+
+!["Before and After"](images/spell-check-before-after.png)
+
+## History
+
+Created by [Calum J. Eadie](https://github.com/CalumJEadie), [Chris Baines](https://github.com/cbaines) and [Devon Buchanan](https://github.com/divinenephron) at [NHS Hack Day 13, May 2016](http://nhshackday.com/).
 
 ## Installing
 
-Check out full installation instructions at [http://www.medicalspellchecker.com](http://www.medicalspellchecker.com).
+Check out full installation instructions at [http://medical-spell-checker-dictionary.github.io/](http://medical-spell-checker-dictionary.github.io/).
 
 ## Acknowledgements
 
 This projects builds upon the word list from [Raj](http://rajn.co)'s [Raj&Co-MedSpelChek](http://rajn.co/?p=515) project.
+
+## License
+
+GPL
 
 ## Contributing
 
@@ -27,19 +39,11 @@ You can help by:
 osx-installer/build-osx-installer.sh
 ```
 
-### Releasing
-
-Todo.
-
-## License
-
-GPL
-
 ## History
 
 This project began at the 2016 NHS Hack Day in London.
 
-### Other solutions
+### Alternatives
 
 #### [Raj&Co-MedSpelChek](http://rajn.co/?p=515)
 
