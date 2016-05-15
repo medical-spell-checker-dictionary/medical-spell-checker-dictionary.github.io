@@ -2,3 +2,4 @@
 cat dictionary >> $HOME/Library/Spelling/LocalDictionary
 sort -o $HOME/Library/Spelling/LocalDictionary $HOME/Library/Spelling/LocalDictionary
 killall AppleSpell
+exit 0
