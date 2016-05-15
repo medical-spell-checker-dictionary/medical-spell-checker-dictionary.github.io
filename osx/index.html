@@ -3,46 +3,16 @@ layout: instruction
 title: OSX
 ---
 
-<p>OSX</p>
-
-<h1>Solution 1</h1>
+<h1>Installing Medical Spell Checker in OS X</h1>
 
 <ul>
 
-	<li>Download <a href="https://raw.githubusercontent.com/medical-spell-checker-dictionary/medical-spell-checker-dictionary.github.io/master/US-English-Medical-Dictionary.dic">US-English-Medical-Dictionary.dic</a>.</li>
+	<li>Download and run the <a href="">Medical Spell Checker</a> installer.</li>
 
-	<li>Open US-English-Medical-Dictionary.dic in TextEdit.</li>
-
-	<li>Right click on Finder. Click "Go to Folder...". Go to the folder "~/Library/Spelling". Open LocalDictionary in TextEdit.</li>
-
-	<li>Copy everything from US-English-Medical-Dictionary.dic into LocalDictionary. Save LocalDictionary.</li>
-
-	<li>You can now trash US-English-Medical-Dictionary.dic</li>
-
-	<li>Restart your computer.</li>
+	<li>Open up a document and check spell checking works as you expect.</li>
 
 	<li>Done!</li>
 
 </ul>
 
-<h1>Solution 2</h1>
-
-<ul>
-
-	<li>Download <a href="">Installer</a>.</li>
-
-	<li>Run Installer.</li>
-
-	<li>Done!</li>
-
-</ul>
-
-<h1>Solution 3</h1>
-
-<code>
-curl -O 'https://raw.githubusercontent.com/medical-spell-checker-dictionary/medical-spell-checker-dictionary.github.io/master/US-English-Medical-Dictionary.dic'
-cat US-English-Medical-Dictionary.dic >> $HOME/Library/Spelling/LocalDictionary
-rm US-English-Medical-Dictionary.dic
-sort -o $HOME/Library/Spelling/LocalDictionary $HOME/Library/Spelling/LocalDictionary
-killall AppleSpell
-</code>
+<p><a href="/osx/manual.html">Not working? Try the manual instructions.</a></p>
