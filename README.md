@@ -1,40 +1,36 @@
-# medical-spell-checker-dictionary
-A British medical English dictionary for use with spell checkers.
+# English Medical Spell Checking Dictionary
 
-## Source
+An English Medical Dictionary for spell checking across devices and applications.
 
-The US-English-Medical-Dictionary.dic in this repository is the Raj&Co-MedSpelChek word list as distributed by Rajasekharan N.
+## Installing
 
-### README
+Check out full installation instructions at [http://www.medicalspellchecker.com](http://www.medicalspellchecker.com).
 
-Raj&Co-MedSpelChek word list
+## Acknowledgements
 
-Release Date - August 3, 2009
+This projects builds upon the word list from [Raj](http://rajn.co)'s [Raj&Co-MedSpelChek](http://rajn.co/?p=515) project.
 
-Raj&Co-MedSpelChek is released under the GPL license.
+## Contributing
 
-Raj&Co-MedSpelChek is a medical spelling word list, designed to be used in conjuction with a standard USA English word list for spell checking.
+You can help by:
 
-The Raj&Co-MedSpelChek word list is provided as a Unicode file.
+- Giving feedback.
+- Adding and correcting the word list.
+- Improving the installation instructions.
+- Improving the installers.
 
-Please visit our WebSite at:
+## Developing
 
-http://rajn.co/?p=515
+### Building OS X Installer
 
-Raj&Co-MedSpelChek is a spelling word list that contains thousands of medical terms.
+```sh
+osx-installer/build-osx-installer.sh
+```
 
-Medical Terms include:
- - Thousands of drug names up to date, possibly with FDA approvals, as of April 2, 2014  (trade and generic names)
- - Anatomical terms
- - Dermatological terms
- - Internal medicine terms
- - Surgical Terms (Including orthopedics and urology)
- - DSM-IV terms
- - ICD-9 terms
- - and many more
+### Releasing
 
-We can be reached by email at raj@rajn.com for comments, questions, errors, or omissions.
+Todo.
 
-Warranty - This software carries no warranty of any kind.  Every effort has been made to ensure that the words included in this dictionary are spelled correctly, but some misspelled words may be incorporated into the files.
+## License
 
-The Raj&Co-MedSpelChek word list was created by Rajasekharan N., and is copyright 2009-2014 of Rajasekharan N.
+GPL
