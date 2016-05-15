@@ -5,5 +5,8 @@
 ### Not in System Dictionary
 
 1,2:5,6-dibenzanthracene
-AastromReplicell
+Aastromreplicell
+accolé
+föhn
+Paré
 zygomaticomaxillary
