@@ -1,6 +1,6 @@
-# English Medical Spell Checking Dictionary
+# Free English Medical Spell Checking Dictionary
 
-An English Medical Dictionary for spell checking across many devices and applications.
+A free English Medical Dictionary for spell checking across many devices and applications.
 
 ## Installing
 
