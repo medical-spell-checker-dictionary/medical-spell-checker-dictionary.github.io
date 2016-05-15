@@ -55,3 +55,4 @@ This is only available for the Mozilla suite, which reduces its usefulness.
  - Spellex
  - Medical Spell Checker by Inductel
  - LexisMed (non-commercial license)
+ - Medincle
