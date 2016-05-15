@@ -11,6 +11,9 @@
            InstallerVersion='100' Languages='1033' Compressed='yes'
            SummaryCodepage='932' />
   <Media Id='1' Cabinet='med-dic.cab' EmbedCab='yes'/>
+  <Property Id="USERLANG" Value='en-GB'>
+	<RegistrySearch Id="UserLang" Type='raw' Root='HKCU' Key='Control Panel\International' Name='LocaleName' />
+  </Property>
   <Directory Id='TARGETDIR' Name='SourceDir'>
     <Directory Id="AppDataFolder" Name="AppDataFolder">
       <Directory Id="MicrosoftAppData" Name="Microsoft">
