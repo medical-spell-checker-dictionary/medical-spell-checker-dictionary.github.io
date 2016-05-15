@@ -7,19 +7,17 @@
          Language='1033' Codepage='932' Version='1.0.0'>
   <Package Id='*' Keywords='Installer' Description="Medical Spelling
                                                     Dictionary 1.0 Installer"
-           Comments='' Manufacturer='Medical Spelling Dictionary Project'
+           Manufacturer='Medical Spelling Dictionary Project'
            InstallerVersion='100' Languages='1033' Compressed='yes'
            SummaryCodepage='932' />
-  <Media Id='1' Cabinet='med-dic.cab' EmbedCab='yes' DiskPrompt='medDicPrompt' />
-  <Property Id='medDicPrompt' Value="" />
+  <Media Id='1' Cabinet='med-dic.cab' EmbedCab='yes'/>
   <Directory Id='TARGETDIR' Name='SourceDir'>
     <Directory Id="AppDataFolder" Name="AppDataFolder">
       <Directory Id="MicrosoftAppData" Name="Microsoft">
         <Directory Id="SpellingAppData" Name="Spelling">
           <Directory Id="LangAppData" Name="en-GB">
             <Component Id='medDicComponent'
-                       Guid='4F01D5EE-19F3-11E6-B80B-9E08C39F6DE8'
-                       Vital='yes'>
+                       Guid='4F01D5EE-19F3-11E6-B80B-9E08C39F6DE8'>
               <File Id='medDicFile' Name='US-English-Medical-Dictionary.dic'
                     DiskId='1' Source='US-English-Medical-Dictionary.dic'
                     KeyPath='yes'>
