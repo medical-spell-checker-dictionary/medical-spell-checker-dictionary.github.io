@@ -14,14 +14,21 @@ The `.dic` files are text files with one word per line. They must be encoded in 
 
 ## What other rules are there about dictionaries? ##
 
-The maximum number of lines in all of the `.dic` files in the spelling directory is 44503. If there are any more lines than this, the additional files will be ignored. For example:
+The maximum number of lines in all of the `.dic` files in the spelling directory is 44502. If there are any more lines than this, the additional files will be ignored. For example:
 
-- If you have a `medicine.dic` file with 4403 words in, all these words will be used with by the spell checker.
-- If you have a `medicine.dic` file with 4404 words in, none of these these words will be used by the spell checker.
-- If you have a `medicine.dic` file with 4403 words in, and a `medicine2.dic` file with one word in, the all words in `medicine.dic` will be used, but none of the words in `medicine2.dic` will be used.
+- If you have a `medicine.dic` file with 4402 words in, all these words will be used with by the spell checker.
+- If you have a `medicine.dic` file with 4403 words in, none of these these words will be used by the spell checker.
+- If you have a `medicine.dic` file with 4402 words in, and a `medicine2.dic` file with one word in, the all words in `medicine.dic` will be used, but none of the words in `medicine2.dic` will be used.
 
 # References #
 
 - [MSDN: About the Spell Checking API][win-spell-api]
 
 [win-spell-api]: https://msdn.microsoft.com/en-us/library/windows/desktop/hh869748(v=vs.85).aspx#dictionary_files "About the Spell Checking API"
+
+Building
+
+
+Run `install.ps1`
+Run `candle.exe WindowsInstaller.wxs`
+Run `light.exe WindowsInstaller.wixobj`
