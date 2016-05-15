@@ -2,3 +2,5 @@ _site
 *.wixobj
 *.wixpdb
 *.msi
+.DS_Store
+build
