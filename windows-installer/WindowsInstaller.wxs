@@ -19,7 +19,7 @@
             <Component Id='medDicComponent'
                        Guid='4F01D5EE-19F3-11E6-B80B-9E08C39F6DE8'>
               <File Id='medDicFile' Name='US-English-Medical-Dictionary.dic'
-                    DiskId='1' Source='..\US-English-Medical-Dictionary.dic'
+                    DiskId='1' Source='..\US-English-Medical-Dictionary.min.dic'
                     KeyPath='yes'>
               </File>
             </Component>

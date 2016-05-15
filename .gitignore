@@ -4,3 +4,4 @@ _site
 *.msi
 .DS_Store
 build
+*.min.dic
