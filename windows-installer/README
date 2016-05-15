@@ -1,0 +1,19 @@
+Information about the Windows system Spell Checking
+
+Which versions of windows?
+
+The Windows system spell checker has existed since Windows 8.
+
+Where do you install dictionaries?
+
+You can add dictionaries to it by adding them to `%appdir%\Microsoft\Spelling\<language>\`. There will be a file `default.dic` already in this directory. Other `.dic` file can be added, and the spell checker will use the words in them. Any number of other files can be added.
+
+What file format is used?
+
+The `.dic` files are text files with one word per line. They must be encoded in UTF-16 LE with a valid BOM.
+
+What other rules are there about dictionaries?
+
+The maximum number of lines in all of the `.dic` files in the spelling directory is 44503. If there are any more lines than this, the additional files will be ignored.
+
+References
