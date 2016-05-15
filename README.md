@@ -43,7 +43,7 @@ osx-installer/build-osx-installer.sh
 
 This project began at the 2016 NHS Hack Day in London.
 
-### Alternatives
+## Alternatives
 
 #### [Raj&Co-MedSpelChek](http://rajn.co/?p=515)
 
