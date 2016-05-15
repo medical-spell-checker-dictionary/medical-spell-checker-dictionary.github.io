@@ -34,3 +34,24 @@ Todo.
 ## License
 
 GPL
+
+## History
+
+This project began at the 2016 NHS Hack Day in London.
+
+### Other solutions
+
+#### [Raj&Co-MedSpelChek](http://rajn.co/?p=515)
+
+This is what this project is based upon, the goal was to improve on this by
+providing documentation and tools for the installation.
+
+#### [OpenMedSpel](http://e-medtools.com/openmedspel.html)
+
+This is only available for the Mozilla suite, which reduces its usefulness.
+
+#### Proprietary solutions (many which cost money)
+
+ - Spellex
+ - Medical Spell Checker by Inductel
+ - LexisMed (non-commercial license)
