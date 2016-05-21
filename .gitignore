@@ -4,4 +4,7 @@ _site
 *.msi
 .DS_Store
 build
+tmp
 *.min.dic
+*.wixproj.user
+.vs

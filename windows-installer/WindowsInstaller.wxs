@@ -1,33 +1,37 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
-<Product Name='Medical Spelling Dictionary 1.0'
-         Manufacturer='Medical Spelling Dictionary Project'
-         Id='3F30D00E-19F1-11E6-92D5-9E08C39F6DE8' 
-         UpgradeCode='D6018FF0-19F1-11E6-82DF-9E08C39F6DE8'
-         Language='1033' Codepage='932' Version='1.0.0'>
-  <Package Id='*' Keywords='Installer' Description="Medical Spelling
-                                                    Dictionary 1.0 Installer"
+  <Product Name='Medical Spelling Dictionary 1.0'
            Manufacturer='Medical Spelling Dictionary Project'
-           InstallerVersion='100' Languages='1033' Compressed='yes'
-           SummaryCodepage='932' />
-  <Media Id='1' Cabinet='med-dic.cab' EmbedCab='yes'/>
-  <Property Id="LOCALENAME">
-	<RegistrySearch Id="UserLang" Type='raw' Root='HKCU' Key='Control Panel\International' Name='LocaleName' />
-  </Property>
-  <Directory Id='TARGETDIR' Name='SourceDir'>
-	<Directory Id="SPELLINGDATA" Name="Spelling Data">
-      <Component Id='medDicComponent'
-                 Guid='4F01D5EE-19F3-11E6-B80B-9E08C39F6DE8'>
-        <File Id='medDicFile' Name='US-English-Medical-Dictionary.dic'
-              DiskId='1' Source='..\US-English-Medical-Dictionary.min.dic'
-              KeyPath='yes'>
-        </File>
-      </Component>
+           Id='3F30D00E-19F1-11E6-92D5-9E08C39F6DE8'
+           UpgradeCode='D6018FF0-19F1-11E6-82DF-9E08C39F6DE8'
+           Language='1033' Codepage='932' Version='1.0.0'>
+    <Package Id='*' Keywords='Installer'
+             Description="Medical Spelling Dictionary 1.0 Installer"
+             InstallerVersion='100' Compressed='yes'
+             SummaryCodepage='932' />
+    <MediaTemplate/>
+    <Property Id="LOCALENAME">
+      <RegistrySearch Id="UserLang" Type='raw' Root='HKCU' Key='Control Panel\International' Name='LocaleName' />
+    </Property>
+    <Feature Id='Complete' Level='1'>
+      <ComponentRef Id='medDicComponent' />
+    </Feature>
+  </Product>
+  <Fragment>
+    <Directory Id='TARGETDIR' Name='SourceDir'>
+      <Directory Id="SPELLINGDATA" Name="Spelling Data" />
     </Directory>
-  </Directory>
-  <SetDirectory Action="SetSpellingDir" Id="SPELLINGDATA" Value="[AppDataFolder]\Microsoft\Spelling\[LOCALENAME]\" />
-  <Feature Id='Complete' Level='1'>
-    <ComponentRef Id='medDicComponent' />
-  </Feature>
-</Product>
+    <SetDirectory Action="SetSpellingDir" Id="SPELLINGDATA" Value="[AppDataFolder]\Microsoft\Spelling\[LOCALENAME]\" />
+  </Fragment>
+
+  <Fragment>
+    <Component Id='medDicComponent'
+               Guid='4F01D5EE-19F3-11E6-B80B-9E08C39F6DE8'
+               Directory ='SPELLINGDATA'>
+      <File Id='medDicFile' Name='US-English-Medical-Dictionary.dic'
+            DiskId='1' Source='..\US-English-Medical-Dictionary.min.dic'
+            KeyPath='yes'>
+      </File>
+    </Component>
+  </Fragment>
 </Wix>
