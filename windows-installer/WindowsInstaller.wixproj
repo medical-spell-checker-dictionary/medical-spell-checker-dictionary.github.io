@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>f442b3c5-2fdd-4ae2-8a12-91628c9fb604</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>windows_installer</OutputName>
+    <OutputName>WindowsInstaller</OutputName>
     <OutputType>Package</OutputType>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
@@ -24,13 +24,13 @@
     <Compile Include="WindowsInstaller.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="install.ps1" />
+    <Content Include="shrinkdictionary.ps1" />
     <Content Include="README" />
     <Content Include="US-English-Medical-Dictionary.dic" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <PropertyGroup>
-    <PreBuildEvent>powershell.exe -file "$(ProjectDir)install.ps1"</PreBuildEvent>
+    <PreBuildEvent>Powershell -File "$(ProjectDir)shrinkdictionary.ps1" -from "$(ProjectDir)..\US-English-Medical-Dictionary.dic" -to "$(TargetDir)US-English-Medical-Dictionary.min.dic"</PreBuildEvent>
   </PropertyGroup>
   <!--
 	To modify your build process, add your task inside one of the targets below and uncomment it.
