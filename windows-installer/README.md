@@ -1,3 +1,13 @@
+# Building #
+
+1. Install [Microsoft Visual Studio][ms-vs].
+2. Install [WiX Toolset][wix].
+3. Open `windows-installer\WindowsInstaller.sln` in Visual Studio.
+4. Build the project using `Ctrl+Shift+B`.
+
+[ms-vs]: https://www.visualstudio.com/
+[wix]: http://wixtoolset.org/releases/
+
 # Information about the Windows system Spell Checking #
 
 ## Which versions of windows? ##
@@ -25,10 +35,3 @@ The maximum number of lines in all of the `.dic` files in the spelling directory
 - [MSDN: About the Spell Checking API][win-spell-api]
 
 [win-spell-api]: https://msdn.microsoft.com/en-us/library/windows/desktop/hh869748(v=vs.85).aspx#dictionary_files "About the Spell Checking API"
-
-Building
-
-
-Run `install.ps1`
-Run `candle.exe WindowsInstaller.wxs`
-Run `light.exe WindowsInstaller.wixobj`

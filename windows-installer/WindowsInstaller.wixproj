@@ -27,9 +27,10 @@
     <Compile Include="WindowsInstaller.wxs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="nuget.config" />
     <Content Include="packages.config" />
+    <Content Include="README.md" />
     <Content Include="shrinkdictionary.ps1" />
-    <Content Include="README" />
     <Content Include="US-English-Medical-Dictionary.dic" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
